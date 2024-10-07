@@ -1,0 +1,14 @@
+C:\Users\KGA\Desktop\20241007_과제04\bin\Debug\net8.0\20241007_과제04.exe
+C:\Users\KGA\Desktop\20241007_과제04\bin\Debug\net8.0\20241007_과제04.deps.json
+C:\Users\KGA\Desktop\20241007_과제04\bin\Debug\net8.0\20241007_과제04.runtimeconfig.json
+C:\Users\KGA\Desktop\20241007_과제04\bin\Debug\net8.0\20241007_과제04.dll
+C:\Users\KGA\Desktop\20241007_과제04\bin\Debug\net8.0\20241007_과제04.pdb
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.AssemblyInfoInputs.cache
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.AssemblyInfo.cs
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.csproj.CoreCompileInputs.cache
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.dll
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\refint\20241007_과제04.dll
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.pdb
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\20241007_과제04.genruntimeconfig.cache
+C:\Users\KGA\Desktop\20241007_과제04\obj\Debug\net8.0\ref\20241007_과제04.dll
