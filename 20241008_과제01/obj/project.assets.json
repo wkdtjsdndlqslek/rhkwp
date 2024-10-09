@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ehdtk\\Desktop\\20241008_과제01\\20241008_과제01.csproj",
+      "projectUniqueName": "C:\\Users\\ehdtk\\Desktop\\rhkwp\\20241008_과제01\\20241008_과제01.csproj",
       "projectName": "20241008_과제01",
-      "projectPath": "C:\\Users\\ehdtk\\Desktop\\20241008_과제01\\20241008_과제01.csproj",
+      "projectPath": "C:\\Users\\ehdtk\\Desktop\\rhkwp\\20241008_과제01\\20241008_과제01.csproj",
       "packagesPath": "C:\\Users\\ehdtk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ehdtk\\Desktop\\20241008_과제01\\obj\\",
+      "outputPath": "C:\\Users\\ehdtk\\Desktop\\rhkwp\\20241008_과제01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ehdtk\\AppData\\Roaming\\NuGet\\NuGet.Config",

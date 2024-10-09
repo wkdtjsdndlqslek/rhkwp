@@ -78,7 +78,7 @@ namespace _20241008_과제01
                                         { Console.WriteLine("더 이상 왼쪽으로 이동 할 수 없다."); }
                                         else if(Location-SPD<0)
                                         {
-                                            Console.WriteLine($"플레이어가 왼쪽으로 {-Location}만큼 이동");
+                                            Console.WriteLine($"플레이어가 왼쪽으로 {SPD-(Location-SPD)}만큼 이동");
                                             Location = 0;
                                         }
                                         else
@@ -116,7 +116,12 @@ namespace _20241008_과제01
                         {
                             case 1:
                                 if (Location<1)
-                                { Console.WriteLine("몬스터는 왼쪽으로 더 이상 이동 할 수 없다."); }
+                                { Console.WriteLine("더 이상 왼쪽으로 이동 할 수 없다."); }
+                                else if (Location-SPD<0)
+                                {
+                                    Console.WriteLine($"몬스터가 왼쪽으로 {SPD-(Location-SPD)}만큼 이동");
+                                    Location = 0;
+                                }
                                 else
                                 {
                                     Location-=SPD;
@@ -126,7 +131,12 @@ namespace _20241008_과제01
                             case 0:
                                 if (Location>9)
                                 {
-                                    Console.WriteLine("몬스터는 오른쪽으로 더 이상 이동 할 수 없다.");
+                                    Console.WriteLine("더 이상 오른쪽으로 이동 할 수 없다.");
+                                }
+                                else if (Location-SPD>10)
+                                {
+                                    Console.WriteLine($"몬스터가 오른쪽으로 {SPD-Location+10}만큼 이동");
+                                    Location = 10;
                                 }
                                 else
                                 {
@@ -168,7 +178,7 @@ namespace _20241008_과제01
         {
             public Mage(string n)
             {
-                name = n; hp=100; att=30; def=20; spd=2;
+                name = n; hp=100; att=60; def=20; spd=2;
             }
 
             public override void Attack(Character c)
@@ -215,7 +225,7 @@ namespace _20241008_과제01
         {
             public Archer(string n)
             {
-                name = n; hp=200; att=20; def=10; spd=3;
+                name = n; hp=50; att=40; def=10; spd=3;
             }
 
             public override void Attack(Character c)
@@ -442,22 +452,42 @@ namespace _20241008_과제01
                 }
                 Console.WriteLine($"{p.Name} 체력: {p.HP}, {c.Name} 체력: {c.HP}");
             }
-               
-            
         }
-        static void Main(string[] args)
+        static void Game()
         {
             ChoiceClass choiceClass = new ChoiceClass();
-            Character player= choiceClass.ChoiceCharacter();
+            Character player = choiceClass.ChoiceCharacter();
             Character cpu = choiceClass.EnemyCharacter();
             while (true)
             {
-                choiceClass.PrintLocation(player,cpu);
+                choiceClass.PrintLocation(player, cpu);
                 choiceClass.BattleResult(player, cpu);
-                if (player.HP==0)
-                { Console.WriteLine($"{player.Name}이 승리했습니다."); break; }
-                else if (cpu.HP==0)
-                { Console.WriteLine($"{cpu.Name}이 승리했습니다."); break; }
+                if (player.HP<=0)
+                { Console.WriteLine($"{cpu.Name}이/가 승리했습니다."); break; }
+                else if (cpu.HP<=0)
+                { Console.WriteLine($"{player.Name}이/가 승리했습니다."); break; }
+            }
+        }
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("1.게임시작 2.게임종료");
+                int choice = int.Parse(Console.ReadLine());
+                if (choice==1||choice==2)
+                {
+                    switch (choice)
+                    {
+                        case 1:
+                            Console.WriteLine("게임시작");
+                            Game();
+                            break;
+                        case 2:
+                            Console.WriteLine("게임 종료");
+                            break;
+                    }
+                }
+                else Console.WriteLine("다시 입력해주세요");
             }
         }
     }
